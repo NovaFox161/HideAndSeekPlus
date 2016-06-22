@@ -1,0 +1,40 @@
+name: HideAndSeekPlus
+version: 1.0.0
+description: Brings 'Hide and Seek' into Minecreaft as a minigame.
+author: Shades161
+website: http://dev.bukkit.org/bukkit-plugins/hideandseekplus
+
+load: POSTWORLD
+softdepend: [PerWorldChatPlus]
+
+main: com.cloudcraftgaming.hideandseekplus.Main
+
+commands:
+  hideandseek:
+    description: Base command for HideAndSeekPlus.
+    permission: hasp.use.command
+  has:
+    description: Base command for HideAndSeekPlus.
+    permission: hasp.use.command
+  hasp:
+    description: Base command for HideAndSeekPlus.
+    permission: hasp.use.command
+
+permissions:
+  hasp.notify.update:
+    description: Allows the player to be notified of an update.
+    default: op
+  hasp.use.command:
+    description: Allows use of the base command.
+    default: true
+  hasp.use.command.set:
+    description: Allows use of the set commands and its functions.
+    default: op
+  hasp.use.command.admin:
+    description: Allows use of the admin commands and its functions.
+  hasp.sign.place:
+    description: Allows placing of HideAndSeekPlus signs.
+    default: op
+  hasp.sign.use:
+    description: Allows use of HideAndSeekPlus signs.
+    default: true
